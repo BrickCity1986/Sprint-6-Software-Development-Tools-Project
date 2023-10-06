@@ -20,3 +20,4 @@ show_histogram = st.checkbox("Show Histogram")
 if show_histogram:
         fig = px.histogram(df, x="condition")
         st.plotly_chart(fig)
+        
