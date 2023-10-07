@@ -1,5 +1,5 @@
 README.md
-# Project Title 
+# Car Advertisement Dashboard 
 
 This project is a web application that provides a dashboard for analyzing car advertisement data. It allows users to explore the dataset, visualize it using histograms and scatterplots, and toggle certain behaviors through checkboxes.
 ```
