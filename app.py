@@ -5,18 +5,24 @@ import plotly.express as px
 # Read the csv file into a pandas DataFrame
 df = pd.read_csv('dataset.csv')
 
-# Added a header with text
-st.header("Car Advertisement Dashboard")
+show_histogram = st.sidebar.checkbox("Show Histogram")
 
-# Create a histogram using Plotly Express
-fig = px.histogram(df, x="price")
-st.plotly_chart(fig)
+st.title("Car Advertisement Dashboard")
 
-# Create a scatter plot using Plotly Express
-fig = px.scatter(df, x="model_year", y="odometer", color="condition")
-st.plotly_chart(fig)
+# Create a subheader
+st.subheader("Histogram")
 
-show_histogram = st.checkbox("Show Histogram")
+# Create a histogram
+hist_fig = px.histogram(data_frame=df, x="price")
+st.plotly_chart(hist_fig, use_container_width=True)
+
+# Create a scatter plot
+st.subheader("Scatter Plot")
+scatter_fig = px.scatter(data_frame=df, x="model_year", y="odometer", color="condition")
+st.plotly_chart(scatter_fig, use_container_width=True)
+
+# Create a checkbox in the sidebar
+show_histogram = st.sidebar.checkbox("Show Histogram")
 if show_histogram:
         fig = px.histogram(df, x="condition")
         st.plotly_chart(fig)
