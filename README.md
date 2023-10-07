@@ -46,7 +46,7 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-6. Open your web browser and navigate to the local server address provided by Streamlit https://sprint-6-d6b1.onrender.com/
+6. Open your web browser and navigate to the local server address provided by Streamlit [https://sprint-6-d6b1.onrender.com/](http://0.0.0.0:10000)
 
 7. You should now see the web application dashboard, where you can interact with the data and explore the visualizations.
 ```
