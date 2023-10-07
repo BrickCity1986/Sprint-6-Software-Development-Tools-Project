@@ -5,8 +5,6 @@ import plotly.express as px
 # Read the csv file into a pandas DataFrame
 df = pd.read_csv('dataset.csv')
 
-show_histogram = st.sidebar.checkbox("Show Histogram")
-
 st.title("Car Advertisement Dashboard")
 
 # Create a subheader
