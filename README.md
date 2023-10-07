@@ -50,5 +50,5 @@ streamlit run app.py
 
 7. You should now see the web application dashboard, where you can interact with the data and explore the visualizations.
 ```
-Here's the URL on Render to my project: https://sprint-6-d6b1.onrender.com/
+Here's the URL on Render to my project: https://sprint-6-d6b1.onrender.com
 ```
